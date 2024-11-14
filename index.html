@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Athithly - Design. Discover. Deliver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons CDN -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JavaScript -->
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
+      >
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.png" alt="Athithly Logo" height="60" />
+            <span class="ms-2 h3 mb-0">Athithly</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span data-feather="menu"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#technology">Technology</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#market">Market Opportunity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#business-model">Business Model</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="d-flex align-items-center"
+      style="
+        background: linear-gradient(to bottom right, #a49782, #c2b7a7);
+        padding-top: 90px;
+        min-height: 100vh;
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <h1 class="display-4 text-white fw-bold">
+              Design. Discover. Deliver
+            </h1>
+            <p class="lead text-white mb-4">
+              Harnessing the power of AR & AI to transform your furniture
+              shopping experience.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img
+              src="images/hero-image.png"
+              class="img-fluid"
+              alt="AR Furniture Placement"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem-Solution Section -->
+    <section id="problem-solution" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">The Problem & Solution</h2>
+        <div class="row">
+          <!-- Problems -->
+          <div class="col-md-6 mb-4">
+            <h3 class="mb-4 text-danger">
+              <i data-feather="alert-circle" class="me-2 icon-accent"></i
+              >Problems
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i
+                  data-feather="x-circle"
+                  class="text-danger me-2 icon-accent"
+                ></i
+                >Poor Online Shopping Experience
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="x-circle"
+                  class="text-danger me-2 icon-accent"
+                ></i
+                >Inconvenient Physical Shopping
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="x-circle"
+                  class="text-danger me-2 icon-accent"
+                ></i
+                >Difficulty Visualizing Furniture
+              </li>
+            </ul>
+          </div>
+          <!-- Solutions -->
+          <div class="col-md-6 mb-4">
+            <h3 class="mb-4 text-success">
+              <i data-feather="lightbulb" class="me-2 icon-accent"></i>Solutions
+            </h3>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i
+                  data-feather="check-circle"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Shop top furniture stores in one app
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="check-circle"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Create custom mood boards using AI
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="check-circle"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Visualize furniture in your space with AR
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Updated Statistics -->
+        <div class="row text-center mt-5">
+          <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded">
+              <h3 class="display-5 text-primary">80%</h3>
+              <p class="mb-0">Prefer centrlized shopping</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded">
+              <h3 class="display-5 text-primary">70%</h3>
+              <p class="mb-0">Find physical shopping inconvenient</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="p-4 bg-white shadow rounded">
+              <h3 class="display-5 text-primary">85%</h3>
+              <p class="mb-0">Struggle to visualize furniture in their space</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Showcase -->
+    <section id="features" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Key Features</h2>
+        <div class="row g-4">
+          <!-- Feature 1 -->
+          <div class="col-md-4 text-center">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i
+                    data-feather="shopping-cart"
+                    class="icon-size text-accent"
+                  ></i>
+                </div>
+                <h5 class="card-title">Unified Shopping Platform</h5>
+                <p class="card-text">
+                  Shop top furniture stores in one app for a seamless
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="col-md-4 text-center">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i data-feather="layers" class="icon-size text-accent"></i>
+                </div>
+                <h5 class="card-title">AI-Powered Mood Boards</h5>
+                <p class="card-text">
+                  Create custom mood boards and find pieces with ease using AI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="col-md-4 text-center">
+            <div class="card border-0 h-100">
+              <div class="card-body">
+                <div class="feature-icon mb-3">
+                  <i data-feather="camera" class="icon-size text-accent"></i>
+                </div>
+                <h5 class="card-title">AR Visualization</h5>
+                <p class="card-text">
+                  Visualize furniture in your space with augmented reality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Innovative Technology Section -->
+    <section id="technology" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Innovative Technology</h2>
+        <div class="row text-center g-4">
+          <!-- Technology 1 -->
+          <div class="col-md-4">
+            <div class="tech-icon mb-3">
+              <i data-feather="smartphone" class="icon-size text-accent"></i>
+            </div>
+            <h5>Advanced Mobile App</h5>
+            <p>
+              Our app leverages the latest mobile technologies for a smooth
+              experience.
+            </p>
+          </div>
+          <!-- Technology 2 -->
+          <div class="col-md-4">
+            <div class="tech-icon mb-3">
+              <i data-feather="cpu" class="icon-size text-accent"></i>
+            </div>
+            <h5>Artificial Intelligence</h5>
+            <p>
+              AI algorithms provide personalized recommendations and mood
+              boards.
+            </p>
+          </div>
+          <!-- Technology 3 -->
+          <div class="col-md-4">
+            <div class="tech-icon mb-3">
+              <i data-feather="eye" class="icon-size text-accent"></i>
+            </div>
+            <h5>Augmented Reality</h5>
+            <p>
+              AR technology allows you to visualize furniture in your own space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Opportunity -->
+    <section id="market" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Market Opportunity</h2>
+        <div class="row align-items-center">
+          <div class="col-md-12 mb-4">
+            <p class="lead text-center">
+              Entering the Bahrain market with plans to expand across the GCC.
+            </p>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">
+                <i
+                  data-feather="trending-up"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >E-commerce growth at 20% annually
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="pie-chart"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >High demand for digital transformation
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="monitor"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >Untapped AR/AI potential in retail
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Model -->
+    <section id="business-model" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Business Model</h2>
+        <div class="row">
+          <div class="col-md-12 mb-4">
+            <h4 class="text-center">Revenue Streams</h4>
+            <ul class="list-group list-group-flush text-center">
+              <li class="list-group-item">
+                <i
+                  data-feather="dollar-sign"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Commission on sales
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="sliders"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Advertising platform for stores
+              </li>
+              <li class="list-group-item">
+                <i data-feather="gift" class="text-success me-2 icon-accent"></i
+                >Premium features for users
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="bar-chart-2"
+                  class="text-success me-2 icon-accent"
+                ></i
+                >Data analytics services
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Proposition Cards -->
+    <section id="value-proposition" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Value Proposition</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">
+                  <i data-feather="user" class="icon-size text-accent me-2"></i
+                  >For Consumers
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Shop multiple stores in one place
+                  </li>
+                  <li class="list-group-item">Personalized recommendations</li>
+                  <li class="list-group-item">Visualize before you buy</li>
+                  <li class="list-group-item">Save time and effort</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card border-0 h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-4">
+                  <i
+                    data-feather="briefcase"
+                    class="icon-size text-accent me-2"
+                  ></i
+                  >For Stores
+                </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Expanded digital presence</li>
+                  <li class="list-group-item">
+                    Access to analytics and insights
+                  </li>
+                  <li class="list-group-item">
+                    Reduce returns and increase sales
+                  </li>
+                  <li class="list-group-item">
+                    Targeted advertising opportunities
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Preview Gallery -->
+    <section id="app-preview" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">App Preview</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-4">
+            <div class="app-screen">
+              <!-- Replace with actual app screenshot -->
+              <img
+                src="images/app-screenshots/screen1.png"
+                class="img-fluid rounded mb-2"
+                alt="Unified Shopping"
+              />
+              <p>Unified Shopping</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="app-screen">
+              <!-- Replace with actual app screenshot -->
+              <img
+                src="images/app-screenshots/screen3.png"
+                class="img-fluid rounded mb-2"
+                alt="AI Mood Boards"
+              />
+              <p>AI Mood Boards</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="app-screen">
+              <!-- Replace with actual app screenshot -->
+              <img
+                src="images/app-screenshots/screen2.png"
+                class="img-fluid rounded mb-2"
+                alt="AR Visualization"
+              />
+              <p>AR Visualization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section id="partnership" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Partner with Us</h2>
+        <div class="row align-items-center">
+          <div class="col-md-8 mb-4">
+            <p class="lead">
+              Join us in revolutionizing the furniture shopping experience.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <i data-feather="box" class="text-primary me-2 icon-accent"></i
+                >Access to cutting-edge technology
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="globe"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >Expand market reach
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="headphones"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >Dedicated support services
+              </li>
+              <li class="list-group-item">
+                <i
+                  data-feather="trending-up"
+                  class="text-primary me-2 icon-accent"
+                ></i
+                >Attractive growth opportunities
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-center mb-4">
+            <a href="#contact" class="btn btn-primary btn-lg"
+              >Become a Partner</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Get in Touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form action="#" method="post" class="contact-form mb-4">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="interest" class="form-label"
+                  >I'm interested in *</label
+                >
+                <select
+                  id="interest"
+                  name="interest"
+                  class="form-select"
+                  required
+                >
+                  <option value="partnership">Store Partnership</option>
+                  <option value="early-access">Early Access</option>
+                  <option value="newsletter">Newsletter Subscription</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Submit
+              </button>
+            </form>
+            <div class="text-center">
+              <p class="mb-1">
+                <i data-feather="mail" class="text-primary me-2"></i>Email:
+                info@athithly.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p class="mb-2">&copy; 2023 Athithly. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" class="text-white me-3"
+            ><i data-feather="facebook" class="icon-size"></i
+          ></a>
+          <a href="#" class="text-white me-3"
+            ><i data-feather="twitter" class="icon-size"></i
+          ></a>
+          <a href="#" class="text-white"
+            ><i data-feather="linkedin" class="icon-size"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Feather Icons Initialization -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Bootstrap JS and dependencies (loaded at the end for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

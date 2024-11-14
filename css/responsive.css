@@ -1,0 +1,72 @@
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .mobile-menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--charcoal);
+    margin: 5px 0;
+  }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+  #hero {
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .hero-image img,
+  .hero-image video {
+    width: 100%;
+  }
+}
+
+/* General Sections */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .problem-solving,
+  .features-grid,
+  .tech-showcase,
+  .market-details,
+  .business-details,
+  .value-cards,
+  .app-gallery,
+  .partnership-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .problem,
+  .solution,
+  .feature-item,
+  .tech-demo,
+  .revenue-streams,
+  .growth-projections,
+  .card,
+  .phone-mockup,
+  .partnership-text,
+  .partnership-cta {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  .stats .stat-item {
+    margin-bottom: 1rem;
+  }
+}
