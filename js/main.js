@@ -19,47 +19,59 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Form handling
-  const form = document.getElementById('contact-form');
-  const formStatus = document.getElementById('form-status');
-  
+  const form = document.getElementById("contact-form");
+  const formStatus = document.getElementById("form-status");
+
   if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
       const submitBtn = form.querySelector('button[type="submit"]');
       submitBtn.disabled = true;
-      submitBtn.textContent = 'Sending...';
+      submitBtn.textContent = "Sending...";
 
       fetch(form.action, {
-        method: 'POST',
+        method: "POST",
         body: new FormData(form),
         headers: {
-            'Accept': 'application/json'
+          Accept: "application/json",
         },
       })
-      .then(response => {
-        if (response.ok) {
-          formStatus.innerHTML = "<p class='alert alert-success'>Thanks for your submission!</p>";
-          form.reset();
-        } else {
-          response.json().then(data => {
-            if (Object.hasOwn(data, 'errors')) {
-              formStatus.innerHTML = data["errors"].map(error => `<p class='alert alert-danger'>${error}</p>`).join("");
-            } else {
-              formStatus.innerHTML = "<p class='alert alert-danger'>Oops! There was a problem submitting your form</p>";
-            }
-          });
-        }
-      })
-      .catch(error => {
-        formStatus.innerHTML = "<p class='alert alert-danger'>Oops! There was a problem submitting your form</p>";
-      })
-      .finally(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Submit';
-      });
+        .then((response) => {
+          if (response.ok) {
+            formStatus.innerHTML =
+              "<p class='alert alert-success'>Thanks for your submission!</p>";
+            form.reset();
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, "errors")) {
+                formStatus.innerHTML = data["errors"]
+                  .map((error) => `<p class='alert alert-danger'>${error}</p>`)
+                  .join("");
+              } else {
+                formStatus.innerHTML =
+                  "<p class='alert alert-danger'>Oops! There was a problem submitting your form</p>";
+              }
+            });
+          }
+        })
+        .catch((error) => {
+          formStatus.innerHTML =
+            "<p class='alert alert-danger'>Oops! There was a problem submitting your form</p>";
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Submit";
+        });
     });
   }
 
   // Feather icons initialization
   feather.replace();
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var myCarousel = document.querySelector("#appPreviewCarousel");
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 3000,
+    wrap: true,
+  });
 });

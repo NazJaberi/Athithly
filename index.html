@@ -72,32 +72,31 @@
     </header>
 
     <!-- Hero Section -->
-    <section
-      id="hero"
-      class="d-flex align-items-center"
-      style="
-        background: linear-gradient(to bottom right, #a49782, #c2b7a7);
-        padding-top: 90px;
-        min-height: 100vh;
-      "
-    >
+    <section id="hero" class="d-flex align-items-center">
       <div class="container">
         <div class="row align-items-center gy-5">
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4 text-white fw-bold">
-              Design. Discover. Deliver
-            </h1>
-            <p class="lead text-white mb-4">
-              Harnessing the power of AR & AI to transform your furniture
-              shopping experience.
-            </p>
+          <div class="col-lg-6 text-center text-lg-start hero-content">
+            <div class="content-wrapper">
+              <h1 class="display-4 text-white fw-bold mb-4">
+                Design. Discover. Deliver
+              </h1>
+              <p class="lead text-white mb-4">
+                Harnessing the power of AR & AI to transform your furniture
+                shopping experience.
+              </p>
+              <a href="#contact" class="btn btn-light btn-lg px-5 rounded-pill">
+                Contact Us
+              </a>
+            </div>
           </div>
-          <div class="col-lg-6 text-center">
-            <img
-              src="images/hero-image.png"
-              class="img-fluid"
-              alt="AR Furniture Placement"
-            />
+          <div class="col-lg-6 hero-image-container">
+            <div class="isometric-preview">
+              <img
+                src="images/hero-image.png"
+                class="img-fluid hero-image"
+                alt="AR Furniture Experience"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -420,44 +419,136 @@
     <section id="app-preview" class="py-5">
       <div class="container">
         <h2 class="text-center mb-5">App Preview</h2>
-        <div class="row g-4 text-center">
+
+        <!-- Desktop Version (hidden on mobile) -->
+        <div class="row g-4 text-center d-none d-md-flex">
           <div class="col-md-4">
             <div class="app-screen">
-              <!-- Replace with actual app screenshot -->
-              <img
-                src="images/app-screenshots/screen1.png"
-                class="img-fluid rounded mb-2"
-                alt="Unified Shopping"
-              />
-              <p>Unified Shopping</p>
+              <div class="screen-wrapper">
+                <img
+                  src="images/app-screenshots/screen1.png"
+                  class="img-fluid"
+                  alt="Unified Shopping"
+                />
+                <div class="screen-caption">
+                  <span class="caption-tag">Featured</span>
+                  <h5>Unified Shopping</h5>
+                  <p>All your favorite stores in one place</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="app-screen">
-              <!-- Replace with actual app screenshot -->
-              <img
-                src="images/app-screenshots/screen3.png"
-                class="img-fluid rounded mb-2"
-                alt="AI Mood Boards"
-              />
-              <p>AI Mood Boards</p>
+              <div class="screen-wrapper">
+                <img
+                  src="images/app-screenshots/screen3.png"
+                  class="img-fluid"
+                  alt="AI Mood Boards"
+                />
+                <div class="screen-caption">
+                  <span class="caption-tag">AI Powered</span>
+                  <h5>AI Mood Boards</h5>
+                  <p>Create perfect room designs instantly</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="app-screen">
-              <!-- Replace with actual app screenshot -->
-              <img
-                src="images/app-screenshots/screen2.png"
-                class="img-fluid rounded mb-2"
-                alt="AR Visualization"
-              />
-              <p>AR Visualization</p>
+              <div class="screen-wrapper">
+                <img
+                  src="images/app-screenshots/screen2.png"
+                  class="img-fluid"
+                  alt="AR Visualization"
+                />
+                <div class="screen-caption">
+                  <span class="caption-tag">AR Ready</span>
+                  <h5>AR Visualization</h5>
+                  <p>See furniture in your space</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Mobile Version (carousel) -->
+        <div
+          id="appPreviewCarousel"
+          class="carousel slide d-md-none"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="app-screen">
+                <div class="screen-wrapper">
+                  <img
+                    src="images/app-screenshots/screen1.png"
+                    class="img-fluid"
+                    alt="Unified Shopping"
+                  />
+                  <div class="screen-caption">
+                    <span class="caption-tag">Featured</span>
+                    <h5>Unified Shopping</h5>
+                    <p>All your favorite stores in one place</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="app-screen">
+                <div class="screen-wrapper">
+                  <img
+                    src="images/app-screenshots/screen3.png"
+                    class="img-fluid"
+                    alt="AI Mood Boards"
+                  />
+                  <div class="screen-caption">
+                    <span class="caption-tag">AI Powered</span>
+                    <h5>AI Mood Boards</h5>
+                    <p>Create perfect room designs instantly</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="app-screen">
+                <div class="screen-wrapper">
+                  <img
+                    src="images/app-screenshots/screen2.png"
+                    class="img-fluid"
+                    alt="AR Visualization"
+                  />
+                  <div class="screen-caption">
+                    <span class="caption-tag">AR Ready</span>
+                    <h5>AR Visualization</h5>
+                    <p>See furniture in your space</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#appPreviewCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#appPreviewCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
     </section>
-
     <!-- Partnership Section -->
     <section id="partnership" class="py-5 bg-light">
       <div class="container">
@@ -504,73 +595,72 @@
       </div>
     </section>
 
-<!-- Call-to-Action Section -->
-<section id="contact" class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Get in Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-lg-6">
-        <form
-          action="https://formspree.io/f/xdkozjoe"
-          method="POST"
-        >
-          <div class="mb-3">
-            <label for="name" class="form-label">Name *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-control"
-              required
-            />
+    <!-- Call-to-Action Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Get in Touch</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form action="https://formspree.io/f/xdkozjoe" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Your Email *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="interest" class="form-label"
+                  >I'm interested in *</label
+                >
+                <select
+                  id="interest"
+                  name="interest"
+                  class="form-select"
+                  required
+                >
+                  <option value="store-partnership">Store Partnership</option>
+                  <option value="investment">Investment Opportunities</option>
+                  <option value="early-access">Early Access</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Your Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">
+                Send
+              </button>
+            </form>
+            <div class="text-center mt-4">
+              <p class="mb-1">
+                <i data-feather="mail" class="text-primary me-2"></i>Email:
+                info@athithly.com
+              </p>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="interest" class="form-label">I'm interested in *</label>
-            <select
-              id="interest"
-              name="interest"
-              class="form-select"
-              required
-            >
-              <option value="store-partnership">Store Partnership</option>
-              <option value="investment">Investment Opportunities</option>
-              <option value="early-access">Early Access</option>
-            </select>
-          </div>
-          <div class="mb-4">
-            <label for="message" class="form-label">Your Message *</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-control"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg w-100">
-            Send
-          </button>
-        </form>
-        <div class="text-center mt-4">
-          <p class="mb-1">
-            <i data-feather="mail" class="text-primary me-2"></i>Email:
-            info@athithly.com
-          </p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
@@ -593,6 +683,21 @@
     <!-- Feather Icons Initialization -->
     <script>
       feather.replace();
+    </script>
+    <script>
+      // Screen rotation animation
+      function rotateScreens() {
+        const screens = document.querySelectorAll(".screen");
+        let currentIndex = 0;
+
+        setInterval(() => {
+          screens.forEach((screen) => screen.classList.remove("active"));
+          currentIndex = (currentIndex + 1) % screens.length;
+          screens[currentIndex].classList.add("active");
+        }, 3000);
+      }
+
+      document.addEventListener("DOMContentLoaded", rotateScreens);
     </script>
 
     <!-- Bootstrap JS and dependencies (loaded at the end for performance) -->
