@@ -38,14 +38,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Form submission handling
+  // Enhanced form submission handling
   const contactForm = document.querySelector(".contact-form");
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    // Implement form submission logic here
-    alert("Thank you for reaching out! We will get back to you soon.");
-    contactForm.reset();
-  });
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      const button = contactForm.querySelector('button[type="submit"]');
+      const originalText = button.textContent;
+
+      try {
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        // Formspree will handle the form submission
+        // We don't need to prevent default or handle the submission manually
+
+        // Optional: Add custom success handling
+        contactForm.addEventListener("formspree:submit", () => {
+          alert("Thank you for your message! We'll get back to you soon.");
+          contactForm.reset();
+        });
+      } catch (error) {
+        console.error("Submission error:", error);
+        alert("Oops! Something went wrong. Please try again later.");
+      } finally {
+        button.disabled = false;
+        button.textContent = originalText;
+      }
+    });
+  }
 
   // Feather icons initialization
   feather.replace();

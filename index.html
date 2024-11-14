@@ -511,7 +511,11 @@
         <h2 class="text-center mb-5">Get in Touch</h2>
         <div class="row justify-content-center">
           <div class="col-lg-6">
-            <form action="#" method="post" class="contact-form mb-4">
+            <form
+              action="https://formspree.io/f/xdkozjoe"
+              method="POST"
+              class="contact-form mb-4"
+            >
               <div class="mb-3">
                 <label for="name" class="form-label">Name *</label>
                 <input
@@ -527,7 +531,7 @@
                 <input
                   type="email"
                   id="email"
-                  name="email"
+                  name="_replyto"
                   class="form-control"
                   required
                 />
@@ -557,6 +561,14 @@
                   required
                 ></textarea>
               </div>
+              <!-- Anti-spam honeypot field -->
+              <input type="text" name="_gotcha" style="display: none" />
+              <!-- Redirect after submission -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://YOUR_DOMAIN/thanks.html"
+              />
               <button type="submit" class="btn btn-primary btn-lg w-100">
                 Submit
               </button>
