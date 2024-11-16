@@ -525,3 +525,12 @@ footer {
     height: 560px;
   }
 }
+
+#contact a {
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+#contact a:hover {
+  color: #a49782;
+}
